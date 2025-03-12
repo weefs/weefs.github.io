@@ -1,6 +1,7 @@
 var clicks = 0;
 var stars = 0;
 var roll = 0;
+var max = 0;
 
 function onButtonClick() {
     clicks += 1;
@@ -14,9 +15,12 @@ function onButtonClick() {
         roll = roll * 2
         stars += 1
     }
+    if (stars > max) {
+        max = stars;
+        document.getElementById("max").innerHTML = max;
+    }
     document.getElementById("stars").innerHTML = stars;
 
 }
 
-// const button = document.querySelector('button');
-// button.addEventListener('click', onButtonClick);
+// omg you found a secret!!!
