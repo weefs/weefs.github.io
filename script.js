@@ -11,7 +11,7 @@ function onButtonClick() {
     stars = 0;
     roll = Math.random();
     while (roll <= 1) {
-        roll *= 2
+        roll = roll * 2
         stars += 1
     }
     document.getElementById("stars").innerHTML = stars;
