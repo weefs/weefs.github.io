@@ -18,9 +18,10 @@ function onButtonClick() {
     if (stars > max) {
         max = stars;
         document.getElementById("max").innerHTML = max;
+        alert(`oh mein gott you have NEW max ! ${max}`)
     }
     document.getElementById("stars").innerHTML = stars;
 
 }
 
-// omg you found a secret!!!
+// wefs{mewomewoemwo}
